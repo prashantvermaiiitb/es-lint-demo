@@ -37,4 +37,34 @@ Sample project to kick start es lint in the projects
     1.  pre-commit 
     2.  pre-push 
 
+12. For installing husky along with lint-staged: 
+    1.  > npm i -D husky lint-staged 
+    2.  > add "lint-staged": {
+                "src/**/*.{js,jsx,css}": [
+                "npm run lint",
+                "prettier --write",
+                "git add ."
+                ]
+                },
+                "husky": {
+                    "hooks": {
+                    "pre-commit": "lint-staged"
+                    }
+                },
+
+    This will help in doing the linting process for the staged files.
+
+13. Also we can try for the name of the branch checking using pre-push hook using "branch-naming-check" plugin
+
+14. Some of the quick relevant video sources are below :-
+    1.  https://www.youtube.com/watch?v=qhuFviJn-es 
+    2.  https://www.youtube.com/watch?v=clzTwZgMlqE&t=7s&ab_channel=TheCodingTrain
+    3.  https://www.youtube.com/watch?v=SydnKbGc7W8&t=4s&ab_channel=TraversyMedia
+    4.  https://www.youtube.com/watch?v=bfyI9yl3qfE&ab_channel=Manorisms
+    5.  https://www.youtube.com/watch?v=-qHA6zbOdLc&ab_channel=MoHo
+    6.  https://www.youtube.com/watch?v=6u9gmwTl3bY&ab_channel=CodeRealm
+    7.  https://www.youtube.com/watch?v=U-R_882UGPM&ab_channel=DylanIsrael
+
+
+
 
