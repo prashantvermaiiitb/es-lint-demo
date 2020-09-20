@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:node/recommended",
-    "plugin:prettier:recommended",
+    "plugin:prettier/recommended",
   ], // all the rules that we want the code to follow
   parserOptions: {
     ecmaFeatures: {

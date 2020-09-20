@@ -36,7 +36,5 @@ Sample project to kick start es lint in the projects
 11. how we can use the husky plugin for implementing the Git hooks
     1.  pre-commit 
     2.  pre-push 
-    
-12. 
 
 
